@@ -2,36 +2,6 @@ import React from 'react';
 
 const Hero = () => {
 
-    const dataHero = [
-        {
-            img : "https://html.softtechitltd.com/khadyo/khadyo/assets/images/img/1.png",
-        },
-        {
-            img : "https://html.softtechitltd.com/khadyo/khadyo/assets/images/shapes/18.png",
-        },
-        {
-            img : "https://html.softtechitltd.com/khadyo/khadyo/assets/images/img/6.png",
-        },
-        {
-            img : "https://html.softtechitltd.com/khadyo/khadyo/assets/images/img/8.png",
-        },
-        {
-            img : "https://html.softtechitltd.com/khadyo/khadyo/assets/images/img/4.png",
-        },
-        {
-            img : "https://html.softtechitltd.com/khadyo/khadyo/assets/images/img/5.png",
-        },
-        {
-            img : "https://html.softtechitltd.com/khadyo/khadyo/assets/images/img/2.png",
-        },
-        {
-            img : "https://html.softtechitltd.com/khadyo/khadyo/assets/images/img/9.png",
-        },
-        {
-            img : "https://html.softtechitltd.com/khadyo/khadyo/assets/images/shapes/18.png",
-        }
-    ]
-
   return (
     <div className='w-[full] as:flex-col sm:h-screen flex sm:flex-row overflow-hidden'>
         {/* First half */}
@@ -51,8 +21,6 @@ const Hero = () => {
             </div>
         </div>
 
-
-
         {/* Second Half */}
 
         <div className='as:w-[100%] sm:w-[50%] as:bg-red-500 h-[100%] flex as:flex-col sm:flex-row relative'>
@@ -60,7 +28,7 @@ const Hero = () => {
             {/* Second Half */}
 
             <div className='absolute top-0 w-[100%] ss:translate-x-8 km:translate-x-28 as:ml-auto as:mr-auto as:p-5 sm:translate-x-16 sm:translate-y-28 md:translate-y-20'>
-                <img className='as:mt-4 md:mt-auto animate-spin' src={dataHero[0].img} alt="" srcset="" />
+                <img className='as:mt-4 md:mt-auto animate-spin' src="https://html.softtechitltd.com/khadyo/khadyo/assets/images/img/1.png" alt="" srcset="" />
                 <img className='absolute top-0 ' src="https://html.softtechitltd.com/khadyo/khadyo/assets/images/img/8.png" alt="" />
                 <img className='animate-bounce absolute top-0 right-0' src="https://html.softtechitltd.com/khadyo/khadyo/assets/images/img/4.png" alt="" />
                 <img className='absolute right-0 left-[85%] bottom-0 top-[78%]' src="https://html.softtechitltd.com/khadyo/khadyo/assets/images/img/9.png" alt="" />
