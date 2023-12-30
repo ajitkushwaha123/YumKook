@@ -1,12 +1,17 @@
 import { useState } from 'react'
-import { Footer, Hero, Navbar } from './components'
+import { Footer, Hero, Navbar, Register } from './components'
+import Login from './components/Login'
 
 function App() {
 
   return (
     <>
       <Navbar />
-      <Hero />
+      {/* <Hero /> */}
+
+      {/* <Login /> */}
+
+      <Register />
       <Footer />
     </>
   )
