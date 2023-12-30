@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Footer, Hero, Navbar, Register } from './components'
+import { Cart, Footer, Hero, Navbar, Register } from './components'
 import Login from './components/Login'
 
 function App() {
@@ -10,8 +10,10 @@ function App() {
       {/* <Hero /> */}
 
       {/* <Login /> */}
+{/* 
+      <Register /> */}
 
-      <Register />
+      <Cart />
       <Footer />
     </>
   )
