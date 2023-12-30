@@ -6,15 +6,7 @@ function App() {
 
   return (
     <>
-      <Navbar />
-      {/* <Hero /> */}
-
-      {/* <Login /> */}
-{/* 
-      <Register /> */}
-
-      <Cart />
-      <Footer />
+    
     </>
   )
 }

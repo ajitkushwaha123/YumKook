@@ -1,10 +1,11 @@
 import React from 'react';
 import {login} from '../assets'
 import { FaGoogle } from "react-icons/fa";
+import { Link , NavLink } from 'react-router-dom';
 
 const Login = () => {
   return (
-    <div className='py-14 sm:px-4 lg:px-22 flex flex-col justify-center items-center sm:flex-row w-[100%]'>
+    <div className='py-14 sm:px-4 lg:px-22 flex ex-col justify-center items-center sm:flex-row w-[100%]'>
       <div className='hidden sm:block w-[50%]'>
          <img width={"100%"} className='' src={login} alt="" />
       </div>
@@ -19,7 +20,7 @@ const Login = () => {
 
             <div className='flex flex-col lg:flex-row items-center justify-between pt-8'>
                 <button className='rounded-lg py-3 px-6 text-[20px] font-semibold bg-primary text-white'>Login Account</button>
-                <h3 className='mt-6'>New ? <a className='text-primary' href="#">Create an account</a></h3>
+                <h3 className='mt-6'>New ? <NavLink className='text-primary' to={"/register"}>Create an account</NavLink></h3>
             </div>
         </form>
       </div>

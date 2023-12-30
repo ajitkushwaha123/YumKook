@@ -1,6 +1,7 @@
 import React from 'react';
 import {login} from '../assets'
 import { FaGoogle } from "react-icons/fa";
+import { NavLink } from 'react-router-dom';
 
 const Register = () => {
   return (
@@ -19,7 +20,7 @@ const Register = () => {
 
             <div className='flex flex-col lg:flex-row items-center justify-between pt-8'>
                 <button className='rounded-lg py-3 px-6 text-[20px] font-semibold bg-primary text-white'>Create Account</button>
-                <h3 className='mt-6'>Already Registered ? <a className='text-primary' href="#">Login</a></h3>
+                <h3 className='mt-6'>Already Registered ? <NavLink className='text-primary' to={"/login"}>Login</NavLink></h3>
             </div>
         </form>
       </div>

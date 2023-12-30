@@ -2,6 +2,7 @@ import React from 'react';
 import { FaHeart } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
 import { FaShoppingCart } from "react-icons/fa";
+import { Link , NavLink } from 'react-router-dom';
 
 // import { IoIosArrowDown } from "react-icons/io";
 
@@ -34,17 +35,17 @@ const Navbar = () => {
           {
             id: "about",
             title: "About us",
-            link : "/about",
+            link : "/login",
           },
           {
             id: "menut",
             title: "Menu",
-            link : "/menu",
+            link : "/register",
           },
           {
             id: "blog",
             title: "Blog",
-            link : "/blog",
+            link : "/cart",
           },
           {
             id: "pages",
@@ -67,10 +68,10 @@ const Navbar = () => {
       <nav className='hidden md:block h-[80px] md:flex justify-center items-center align-middle'>
         <ul className='flex text-[15px] font-regular uppercase text-white'>
           {navItems.map((nav , index) => (
-            <li key={nav.id} className={`font-poppins hover:text-primary cursor-pointer text-[14px] ${index === navItems.length - 1 ? 'pr-0' : 'pr-10'}`}>
-               <a href={`${nav.link}`}>
+            <li key={nav.id} className={`font-poppins  hover:text-primary cursor-pointer text-[14px] ${index === navItems.length - 1 ? 'pr-0' : 'pr-10'}`}>
+               <NavLink to={nav.link}>
                   {nav.title}
-               </a>
+               </NavLink>
                {/* {(index === 0 || index === 3 || index === 4) && <IoIosArrowDown />} */}
             </li>
           ))}
@@ -81,13 +82,17 @@ const Navbar = () => {
         <ul className='flex text-white as:text-[15px] xs:text-[18px] justify-center '>
             {navIcons.map((icons , index) => (
                 <li key = {icons.id} className='xs:mr-4 as:mr-2 as:w-[28px] as:h-[28px] xs:w-[40px] xs:h-[40px] border flex justify-center items-center rounded-full hover:text-primary hover:bg-black hover:border hover:border-primary'>
-                    <a href={`${icons.link}`}>
+                    <NavLink to={icons.link}>
                       {icons.icons}
-                    </a>
+                    </NavLink>
                 </li>
             ))}
 
-            <button className='xs:px-9 as:px-4 xs:py-2 md:ml-10 ss:ml-2 bg-primary hover:bg-black hover:text-primary hover:border-primary hover:border rounded-lg text-[] font-semibold'>Login</button>
+           <NavLink to={"/login"} >
+            <button className='xs:px-9 as:px-4 xs:py-2 md:ml-10 ss:ml-2 bg-primary hover:bg-black hover:text-primary hover:border-primary hover:border rounded-lg text-[] font-semibold'>
+              Login
+            </button>
+           </NavLink>
         </ul>
 
         <div>
