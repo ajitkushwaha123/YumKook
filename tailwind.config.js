@@ -8,6 +8,7 @@ module.exports = {
         primary: "#c33",
         heroBrown : "#271c0a",
         blackY : "#131313",
+        textSpan : "#f93",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
@@ -16,6 +17,7 @@ module.exports = {
         'header': "url('./assets/background/hero.png')",
         'starsImg': "url('./assets/background/contact-bg.jpg')",
         'events-bg': "url('./assets/background/event-bg.jpg')", 
+        'bag' : "https://html.softtechitltd.com/khadyo/khadyo/assets/images/shapes/22.png",
       },
       keyframes: {
         bounce : {
