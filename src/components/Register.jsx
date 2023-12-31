@@ -2,8 +2,11 @@ import React from 'react';
 import {login} from '../assets'
 import { FaGoogle } from "react-icons/fa";
 import { NavLink } from 'react-router-dom';
+import app from './Firebase';
+import { getAuth, RecaptchaVerifier } from "firebase/auth";
 
 const Register = () => {
+
   return (
     <div className='py-14 sm:px-4 lg:px-22 flex flex-col justify-center items-center sm:flex-row w-[100%]'>
       <div className='hidden sm:block w-[50%]'>

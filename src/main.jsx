@@ -8,6 +8,8 @@ import Login from './components/Login.jsx';
 import Register from './components/Register.jsx';
 import Cart from './components/Cart.jsx';
 import Hero from './components/Hero.jsx';
+import ProductPage from './components/ProductPage.jsx';
+import Error from './components/Error.jsx';
 
 const router = createBrowserRouter(
   createRoutesFromElements (
@@ -16,6 +18,8 @@ const router = createBrowserRouter(
       <Route path='/login' element={<Login />} />
       <Route path='/register' element={<Register />} />
       <Route path='/cart' element={<Cart />} />
+      <Route path='/productpage' element={<ProductPage />} />
+      <Route element={<Error />} />
     </Route>
   )
 )

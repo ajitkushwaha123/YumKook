@@ -33,24 +33,24 @@ const Navbar = () => {
             title : "Home",
           },
           {
-            id: "about",
-            title: "About us",
-            link : "/login",
+            id: "poduct",
+            title: "Product",
+            link : "/productpage",
           },
+          // {
+          //   id: "menut",
+          //   title: "Menu",
+          //   link : "/register",
+          // },
           {
-            id: "menut",
-            title: "Menu",
-            link : "/register",
-          },
-          {
-            id: "blog",
-            title: "Blog",
+            id: "cart",
+            title: "Cart",
             link : "/cart",
           },
           {
             id: "pages",
-            title: "Pages",
-            link : "/pages",
+            title: "Register",
+            link : "/register",
           },
           {
             id: "contact",
