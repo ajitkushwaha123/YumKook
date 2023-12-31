@@ -2,8 +2,6 @@ import React from 'react';
 import {login} from '../assets'
 import { FaGoogle } from "react-icons/fa";
 import { NavLink } from 'react-router-dom';
-import app from './Firebase';
-import { getAuth, RecaptchaVerifier } from "firebase/auth";
 
 const Register = () => {
 
