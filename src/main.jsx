@@ -10,6 +10,7 @@ import Cart from './components/Cart.jsx';
 import Hero from './components/Hero.jsx';
 import ProductPage from './components/ProductPage.jsx';
 import Error from './components/Error.jsx';
+import Test from './components/Test.jsx';
 
 const router = createBrowserRouter(
   createRoutesFromElements (
@@ -19,6 +20,7 @@ const router = createBrowserRouter(
       <Route path='/register' element={<Register />} />
       <Route path='/cart' element={<Cart />} />
       <Route path='/productpage' element={<ProductPage />} />
+      <Route path='/test' element={<Test />}/>
       <Route element={<Error />} />
     </Route>
   )
